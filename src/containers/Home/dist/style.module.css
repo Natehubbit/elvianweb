@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+}
+.container .blob {
+  position: absolute;
+  top: 15%;
+  left: -10px;
+  z-index: -1;
+}
+.container .intro {
+  padding-left: 42px;
+}
+.container .intro .head {
+  font-family: "Righteous";
+  font-size: 30px;
+  color: #8F4EBC;
+}
+.container .intro .tag {
+  color: #F16FD3;
+  font-size: 15px;
+}
+.container .cakes {
+  display: flex;
+  position: relative;
+}
+.container .cakes .list {
+  display: flex;
+  overflow-x: scroll;
+  margin: 42px;
+  z-index: 2;
+}
+.container .cakes .controlBtn {
+  position: absolute;
+  height: 80%;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .cakes .controlBtn.right {
+  right: 0;
+}
+.container .foot {
+  padding-left: 42px;
+}

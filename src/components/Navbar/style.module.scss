@@ -1,0 +1,9 @@
+@import '../../variables';
+.container{
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 42px 28px 42px;
+  display: flex;
+  background-color: $secondary-light2;
+}

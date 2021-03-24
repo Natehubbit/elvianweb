@@ -1,0 +1,28 @@
+.container {
+  margin-right: 42px;
+}
+.container .image {
+  height: 334px;
+  width: 240px;
+  margin-bottom: 16px;
+  border-radius: 25px;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.container .info .label {
+  color: #000;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container .info .label:hover {
+  color: #8F4EBC;
+}
+.container .info .price {
+  color: #F16FD3;
+  font-size: 20px;
+  font-weight: bold;
+}

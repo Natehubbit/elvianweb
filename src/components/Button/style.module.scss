@@ -1,0 +1,30 @@
+@import '../../variables';
+
+.container{
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $primary-color;
+  border: none;
+  box-shadow: 0px 4px 52px rgba($primary-color, 0.5);
+  -webkit-box-shadow: 0px 4px 52px rgba($primary-color, 0.5);
+  -moz-box-shadow: 0px 4px 52px rgba($primary-color, 0.5);
+  border-radius: 21px;
+  font-weight: bold;
+  color: $white;
+  cursor: pointer;
+  &.outline {
+    background-color: $secondary-light2;
+    border: 2px solid $primary-color;
+    color: $primary-color;
+  }
+  &:hover{
+    box-shadow: $shadow-hover;
+    -webkit-box-shadow: $shadow-hover;
+    -moz-box-shadow: $shadow-hover;
+  }
+}

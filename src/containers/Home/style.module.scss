@@ -1,0 +1,54 @@
+@import '../../variables';
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+  .blob {
+    position: absolute;
+    top: 15%;
+    left: -10px;
+    // width: 0%;
+    z-index: -1;
+  }
+  .intro {
+    padding-left: 42px;
+    .head {
+      font-family: 'Righteous';
+      font-size: 30px;
+      color: $primary-color;
+    }
+    .tag {
+      color: $secondary-color;
+      font-size: 15px;
+    }
+  }
+  .cakes {
+    display: flex;
+    position: relative;
+    .list {
+      display: flex;
+      overflow-x: scroll;
+      margin: 42px;
+      z-index: 2;
+    }
+    .controlBtn {
+      position: absolute;
+      height: 80%;
+      // background-color: red;
+      padding: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.right {
+        right: 0;
+      }
+    }
+  }
+  .foot {
+    padding-left: 42px;
+  }
+}

@@ -1,0 +1,23 @@
+@import '../../variables';
+
+.container {
+  z-index: 5;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  background-color: $primary-color;
+  color: $white;
+  &:hover {
+    box-shadow: $shadow-hover;
+    -webkit-box-shadow: $shadow-hover;
+    -moz-box-shadow: $shadow-hover;
+  }
+}
