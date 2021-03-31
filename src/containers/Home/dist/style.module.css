@@ -1,10 +1,13 @@
 .container {
   display: flex;
   min-height: 100vh;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-direction: column;
   flex: 1;
   position: relative;
+  background: url(../../assets/images/home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .container .blob {
   position: absolute;
@@ -13,7 +16,7 @@
   z-index: -1;
 }
 .container .intro {
-  padding-left: 42px;
+  margin: 42px;
 }
 .container .intro .head {
   font-family: "Righteous";
@@ -27,12 +30,24 @@
 .container .cakes {
   display: flex;
   position: relative;
+  margin-bottom: 42px;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
 }
-.container .cakes .list {
-  display: flex;
-  overflow-x: scroll;
-  margin: 42px;
-  z-index: 2;
+.container .cakes ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  padding: 42px;
+  border-radius: 100px;
+}
+.container .cakes ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.container .cakes ::-webkit-scrollbar-thumb {
+  background: #F16FD3;
+  border-radius: 100px;
 }
 .container .cakes .controlBtn {
   position: absolute;
@@ -47,4 +62,5 @@
 }
 .container .foot {
   padding-left: 42px;
+  margin-bottom: 50px;
 }

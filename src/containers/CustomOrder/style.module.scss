@@ -1,0 +1,46 @@
+@import '../../variables';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  position: relative;
+  .side {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+    .sideBack {
+      // min-height: 100vh;
+      position: absolute;
+      top: 0;
+      right: 0;
+      flex:1;
+      display: flex;
+    }
+  }
+  .blob {
+    width: 60%;
+    align-items: center;
+    position: absolute;
+    z-index: -1;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    .form {
+      padding: 42px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      flex-direction: column;
+      .formInputs {
+        display: inline-flex;
+        flex-direction: column;
+        width: 50%;
+      }
+    }
+  }
+}

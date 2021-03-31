@@ -3,10 +3,14 @@
 .container {
   display: flex;
   min-height: 100vh;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-direction: column;
   flex: 1;
   position: relative;
+  background: url(../../assets/images/home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-position: bottom;
   .blob {
     position: absolute;
     top: 15%;
@@ -15,7 +19,7 @@
     z-index: -1;
   }
   .intro {
-    padding-left: 42px;
+    margin: 42px;
     .head {
       font-family: 'Righteous';
       font-size: 30px;
@@ -29,16 +33,35 @@
   .cakes {
     display: flex;
     position: relative;
-    .list {
-      display: flex;
-      overflow-x: scroll;
-      margin: 42px;
-      z-index: 2;
+    margin-bottom: 42px;
+
+    /* width */
+    ::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+      padding: 42px;
+      border-radius: 100px;
+      // display: none;
     }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: $secondary-color;
+      border-radius: 100px;
+    }
+
+    /* Handle on hover */
+    // ::-webkit-scrollbar-thumb:hover {
+    //   // background: #555;
+    // }
     .controlBtn {
       position: absolute;
       height: 80%;
-      // background-color: red;
       padding: 12px;
       display: flex;
       justify-content: center;
@@ -50,5 +73,6 @@
   }
   .foot {
     padding-left: 42px;
+    margin-bottom: 50px;
   }
 }

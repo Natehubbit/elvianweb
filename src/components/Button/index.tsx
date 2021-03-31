@@ -1,24 +1,32 @@
 import React, { ReactNode } from 'react'
 import styles from './style.module.scss'
 import cx from 'classnames/bind'
-import { motion } from 'framer-motion'
+import { HTMLMotionProps, motion } from 'framer-motion'
 
 const cn = cx.bind(styles) 
 
-interface IButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
+interface IButtonProps extends HTMLMotionProps<'button'> {
   label: string;
-  type?: 'solid'|'outline';
+  mode?: 'solid'|'outline';
   icon?: ReactNode;
 }
 
 const Button:React.FC<IButtonProps> = ({
   label,
-  type,
-  icon
+  mode,
+  icon,
+  ...props
 }) => {
-  const isOutline = type === 'outline'
+  const isOutline = mode === 'outline'
   return (
     <motion.button 
+      {...props}
+      initial={{
+        opacity: 0
+      }}
+      animate={{
+        opacity: 1
+      }}
       whileHover={{scale: 1.05}}
       className={cn({
         container:true,

@@ -1,0 +1,68 @@
+@import '../../variables';
+
+.container {
+  overflow-x: auto;
+  margin-left: 42px;
+  margin-right: 42px;
+  .list {
+    display: flex;
+    z-index: 2;
+    padding-bottom: 30px;
+    overflow: hidden;
+    &.all{
+      margin: 42px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+  }
+
+  .showcase {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: $modal-back;
+    display: flex;
+    .waves {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+    .showcaseImg {
+      height: 100vh;
+      width: 45%;
+      background-color: $black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // background-position: center!important;
+      // background-repeat: no-repeat!important;
+      // background-size: cover!important;
+      img {
+        width: 100%;
+      }
+    }
+    .showcaseInfo {
+      position: relative;
+      background-color: $secondary-light2;
+      height: 100%;
+      width: 55%;
+      .close {
+        position: absolute;
+        right: 25px;
+        top: 20px;
+      }
+      .showcaseContent {
+        padding: 20px;
+        .header {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

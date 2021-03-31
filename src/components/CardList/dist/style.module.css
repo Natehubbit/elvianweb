@@ -1,0 +1,62 @@
+.container {
+  overflow-x: auto;
+  margin-left: 42px;
+  margin-right: 42px;
+}
+.container .list {
+  display: flex;
+  z-index: 2;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+.container .list.all {
+  margin: 42px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.container .showcase {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+.container .showcase .waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.container .showcase .showcaseImg {
+  height: 100vh;
+  width: 45%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .showcase .showcaseImg img {
+  width: 100%;
+}
+.container .showcase .showcaseInfo {
+  position: relative;
+  background-color: #FCDFE9;
+  height: 100%;
+  width: 55%;
+}
+.container .showcase .showcaseInfo .close {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+}
+.container .showcase .showcaseInfo .showcaseContent {
+  padding: 20px;
+}
+.container .showcase .showcaseInfo .showcaseContent .header {
+  color: #8F4EBC;
+}

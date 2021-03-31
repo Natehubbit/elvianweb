@@ -1,16 +1,20 @@
-import React, { HTMLAttributes, ReactNode } from 'react'
+import React, { ReactNode } from 'react'
 import styles from './style.module.scss'
-import { motion } from 'framer-motion'
+import { HTMLMotionProps, motion } from 'framer-motion'
+import cn from 'classnames'
 
-interface IFABProps extends HTMLAttributes<HTMLButtonElement> {
+interface IFABProps extends HTMLMotionProps<"button"> {
   icon: string|ReactNode;
 }
 
 const FAB: React.FC<IFABProps> = ({
-  icon
+  icon,
+  className,
+  ...props
 }) => {
   return (
     <motion.button
+      {...props}
       initial={{
         opacity: 0
       }} 
@@ -18,7 +22,7 @@ const FAB: React.FC<IFABProps> = ({
         opacity: 1
       }}
       whileHover={{scale:1.05}}
-      className={styles['container']}>
+      className={cn(styles['container'],className)}>
       {icon}
     </motion.button>
   )

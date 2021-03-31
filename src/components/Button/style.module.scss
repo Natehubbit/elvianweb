@@ -10,15 +10,15 @@
   padding-bottom: 10px;
   background-color: $primary-color;
   border: none;
-  box-shadow: 0px 4px 52px rgba($primary-color, 0.5);
-  -webkit-box-shadow: 0px 4px 52px rgba($primary-color, 0.5);
-  -moz-box-shadow: 0px 4px 52px rgba($primary-color, 0.5);
+  box-shadow: 0px 4px 52px rgba($primary-color, 0.2);
+  -webkit-box-shadow: 0px 4px 52px rgba($primary-color, 0.2);
+  -moz-box-shadow: 0px 4px 52px rgba($primary-color, 0.2);
   border-radius: 21px;
   font-weight: bold;
   color: $white;
   cursor: pointer;
   &.outline {
-    background-color: $secondary-light2;
+    background-color: $background-color;
     border: 2px solid $primary-color;
     color: $primary-color;
   }

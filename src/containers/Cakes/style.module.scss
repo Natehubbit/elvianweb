@@ -1,0 +1,19 @@
+@import '../../variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: visible;
+  flex: 1;
+  background-color: $background-color;
+  // .list {
+  //   padding: 50px;
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   align-items: center;
+  //   justify-content: space-around;
+  //   div {
+  //     margin: 20px
+  //   }
+  // }
+}

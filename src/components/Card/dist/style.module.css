@@ -1,5 +1,7 @@
 .container {
   margin-right: 42px;
+  margin-bottom: 40px;
+  filter: drop-shadow(5px 5px 5px rgba(252, 163, 204, 0.3));
 }
 .container .image {
   height: 334px;

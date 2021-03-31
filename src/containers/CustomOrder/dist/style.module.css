@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  position: relative;
+}
+.container .side {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+.container .side .sideBack {
+  position: absolute;
+  top: 0;
+  right: 0;
+  flex: 1;
+  display: flex;
+}
+.container .blob {
+  width: 60%;
+  align-items: center;
+  position: absolute;
+  z-index: -1;
+}
+.container .content {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+.container .content .form {
+  padding: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+}
+.container .content .form .formInputs {
+  display: inline-flex;
+  flex-direction: column;
+  width: 50%;
+}
