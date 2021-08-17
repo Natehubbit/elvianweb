@@ -39,10 +39,7 @@ exports.__esModule = true;
 var react_1 = require("react");
 var react_router_dom_1 = require("react-router-dom");
 var Button_1 = require("../../components/Button");
-// import FAB from '../../components/FAB'
 var style_module_scss_1 = require("./style.module.scss");
-// import { ArrowRight } from 'react-feather'
-// import cx from 'classnames/bind'
 var framer_motion_1 = require("framer-motion");
 var Navbar_1 = require("../../components/Navbar");
 var CardList_1 = require("../../components/CardList");

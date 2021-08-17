@@ -1,13 +1,10 @@
 .container {
   overflow-x: auto;
-  margin-left: 42px;
-  margin-right: 42px;
 }
 .container .list {
   display: flex;
   z-index: 2;
-  padding-bottom: 30px;
-  overflow: hidden;
+  padding: 42px;
 }
 .container .list.all {
   margin: 42px;
@@ -15,7 +12,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  overflow-x: hidden;
 }
 .container .showcase {
   position: fixed;

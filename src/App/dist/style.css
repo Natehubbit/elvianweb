@@ -8,3 +8,11 @@ body {
   flex-direction: column;
   flex: 1;
 }
+body .link {
+  color: #8F4EBC;
+  text-decoration: underline;
+  cursor: pointer;
+}
+body .link:hover {
+  opacity: 0.6;
+}

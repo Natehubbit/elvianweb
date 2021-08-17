@@ -68,10 +68,10 @@ var Cakes = function () {
             }
         });
     }); };
-    return (react_1["default"].createElement("div", { className: style_module_scss_1["default"]['container'] },
-        react_1["default"].createElement(Navbar_1["default"], null),
+    return (React.createElement("div", { className: style_module_scss_1["default"]['container'] },
+        React.createElement(Navbar_1["default"], null),
         info,
-        loading && react_1["default"].createElement(CakeLoader_1["default"], null),
-        hasProducts && react_1["default"].createElement(CardList_1["default"], { data: products, type: 'vertical' })));
+        loading && React.createElement(CakeLoader_1["default"], null),
+        hasProducts && React.createElement(CardList_1["default"], { data: products, type: 'vertical' })));
 };
 exports["default"] = Cakes;

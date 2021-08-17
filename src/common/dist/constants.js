@@ -1,12 +1,27 @@
 "use strict";
 exports.__esModule = true;
-exports.ORDER_FORM = exports.URI = void 0;
-exports.URI = 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=980&q=80';
+exports.INITIAL_ORDER_VALUES = exports.ORDER_FORM = void 0;
 exports.ORDER_FORM = {
     name: 'Name',
     contact: 'Contact',
     ocassion: 'Occasion',
     email: 'Email',
     description: 'Description',
-    image: 'Have an image that describes your cake? Click or drag and drop to upload image'
+    image: function (_a) {
+        var onUpload = _a.onUpload;
+        return React.createElement("p", null,
+            "Have an image that describes your cake? ",
+            React.createElement("span", { className: 'link', onClick: onUpload }, "Click"),
+            " or drag and drop to ",
+            '\t',
+            React.createElement("span", { className: 'link', onClick: onUpload }, "upload image"));
+    }
+};
+exports.INITIAL_ORDER_VALUES = {
+    name: '',
+    contact: '',
+    description: '',
+    email: '',
+    ocassion: '',
+    uri: ''
 };

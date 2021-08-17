@@ -10,8 +10,8 @@
     overflow: hidden;
     position: relative;
     min-height: 100vh;
+    background-color: $background-color;
     .sideBack {
-      // min-height: 100vh;
       position: absolute;
       top: 0;
       right: 0;

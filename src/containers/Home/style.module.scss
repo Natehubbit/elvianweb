@@ -10,12 +10,10 @@
   background: url(../../assets/images/home.png);
   background-repeat: no-repeat;
   background-size: cover;
-  // background-position: bottom;
   .blob {
     position: absolute;
     top: 15%;
     left: -10px;
-    // width: 0%;
     z-index: -1;
   }
   .intro {
@@ -39,14 +37,14 @@
     ::-webkit-scrollbar {
       width: 5px;
       height: 5px;
-      padding: 42px;
       border-radius: 100px;
-      // display: none;
     }
 
     /* Track */
     ::-webkit-scrollbar-track {
       background: #f1f1f1;
+      margin: 42px;
+
     }
 
     /* Handle */

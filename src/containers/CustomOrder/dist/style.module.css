@@ -9,6 +9,7 @@
   overflow: hidden;
   position: relative;
   min-height: 100vh;
+  background-color: #FCF1F1;
 }
 .container .side .sideBack {
   position: absolute;

@@ -1,10 +1,11 @@
 "use strict";
 exports.__esModule = true;
-exports.auth = exports.db = void 0;
+exports.TaskEvent = exports.storage = exports.auth = exports.db = void 0;
 var app_1 = require("firebase/app");
 require("firebase/analytics");
 require("firebase/auth");
 require("firebase/firestore");
+require("firebase/storage");
 var config = {
     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     projectId: "elviancakes",
@@ -18,3 +19,5 @@ app_1["default"].initializeApp(config);
 app_1["default"].analytics();
 exports.db = app_1["default"].firestore();
 exports.auth = app_1["default"].auth();
+exports.storage = app_1["default"].storage();
+exports.TaskEvent = app_1["default"].storage.TaskEvent;

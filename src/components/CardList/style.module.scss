@@ -2,20 +2,23 @@
 
 .container {
   overflow-x: auto;
-  margin-left: 42px;
-  margin-right: 42px;
+  // margin-left: 42px;
+  // margin-right: 42px;
+  // padding: 20px;
   .list {
     display: flex;
     z-index: 2;
-    padding-bottom: 30px;
-    overflow: hidden;
+    padding: 42px;
+    // padding-bottom: 30px;
+    // margin: 20px;
+    // overflow: auto;
     &.all{
       margin: 42px;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      overflow-x: hidden;
+      // overflow-x: hidden;
     }
   }
 
